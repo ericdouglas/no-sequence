@@ -1,5 +1,5 @@
 module.exports = {
 
-  checkLength   : require( './checklength.js' )
+  checkSequence   : require( './checkSequence.js' )
 
 };
