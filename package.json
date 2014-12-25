@@ -4,7 +4,7 @@
   "description": "Module to verify sequential passwords",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.8.10"
+    "gulp-shell": "^0.2.11"
   },
   "devDependencies": {
     "chai": "^1.10.0",
@@ -14,7 +14,8 @@
     "gulp-mocha": "^2.0.0",
     "istanbul": "^0.3.5",
     "jshint-stylish": "^1.0.0",
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "mocha-lcov-reporter": "0.0.1"
   },
   "scripts": {
     "test": "gulp test"
