@@ -3,6 +3,7 @@ function generateMaxValue( pass ) {
   /**
   *
   * Sum each value of the 'pass' like they are in sequence
+  * Used to verify ascending order
   *
   * @param {String} pass : password
   *
