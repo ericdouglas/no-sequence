@@ -1,0 +1,30 @@
+{
+  "name": "no-sequence",
+  "version": "0.1.0",
+  "description": "Module to verify sequential passwords",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thothJS/no-sequence.git"
+  },
+  "keywords": [
+    "no-sequence",
+    "sequence",
+    "password",
+    "verification",
+    "pass"
+  ],
+  "author": "Eric Douglas <eric.douglas.mail@gmail.com> (https://github.com/ericdouglas)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thothJS/no-sequence/issues"
+  },
+  "homepage": "https://github.com/thothJS/no-sequence"
+}
