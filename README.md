@@ -1,3 +1,3 @@
-# noSequence
+# no-sequence
 
-Module to verify sequential passwords
+Module to verify sequential passwords.
