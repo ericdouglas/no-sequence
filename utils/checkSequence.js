@@ -14,6 +14,9 @@ function checkSequence( pass, size ) {
   * @param {String} pass : password to verify
   * @param {Number} size : minimum size to be a valid password
   *
+  * return false if pass is sequential or do not have enough chars
+  * return true if pass is not sequential
+  *
   */
 
   'use strict';
