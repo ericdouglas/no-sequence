@@ -21,4 +21,12 @@ describe( '#checkSequence', function() {
   it( 'should return false if the password are letters and are in descending order', function() {
     expect( checkSequence( 'edcba', 6 )).to.be.false;
   });
+
+  it( 'should return false if the password are capital letters and are in ascending order', function() {
+    expect( checkSequence( 'DEFGHI', 6 )).to.be.false;
+  });
+
+  it( 'should return false if the password are capital letters and are in descending order', function() {
+    expect( checkSequence( 'EDCBA', 6 )).to.be.false;
+  });
 });
