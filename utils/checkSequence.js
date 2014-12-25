@@ -1,6 +1,7 @@
-var checkSize        = require( './checkSize' );
-var generateMaxValue = require( './generateMaxValue' );
-var generateMInValue = require( './generateMInValue' );
+var checkSize             = require( './checkSize' );
+var generateMaxValue      = require( './generateMaxValue' );
+var generateMInValue      = require( './generateMInValue' );
+var generateLastCharTotal = require( './generateLastCharTotal' );
 
 function checkSequence( pass, size ) {
 
@@ -17,7 +18,10 @@ function checkSequence( pass, size ) {
 
   'use strict';
 
-  var sizeOk = checkSize( pass, size );
+  var sizeOk    = checkSize( pass, size );
+  var maxTotal  = generateMaxValue( pass );
+  var minTotal  = generateMinValue( pass );
+  var lastTotal = generateLastCharTotal( pass );
 
 }
 
