@@ -1,7 +1,4 @@
-var checkSize             = require( './checkSize' );
-var generateMaxValue      = require( './generateMaxValue' );
-var generateMinValue      = require( './generateMinValue' );
-var generateLastCharTotal = require( './generateLastCharTotal' );
+var utils = require( './' );
 
 function checkSequence( pass, size ) {
 
@@ -15,7 +12,7 @@ function checkSequence( pass, size ) {
   * @param {Number} size : minimum size to be a valid password
   *
   * return false if pass is sequential or do not have enough chars
-  * return true if pass is not sequential
+  * return true if pass is not sequential and have enough chars
   *
   */
 
@@ -23,12 +20,14 @@ function checkSequence( pass, size ) {
 
   var status = true;
 
-  var sizeOk    = checkSize( pass, size );
-  var maxTotal  = generateMaxValue( pass );
-  var minTotal  = generateMinValue( pass );
-  var lastTotal = generateLastCharTotal( pass );
+  var sizeOk    = utils.checkSize( pass, size );
+  var maxTotal  = utils.generateMaxValue( pass );
+  var minTotal  = utils.generateMinValue( pass );
+  var lastTotal = utils.generateLastCharTotal( pass );
 
-  if ( !sizeOk || lastTotal === maxTotal || lastTotal === minTotal ) {
+  if ( !sizeOk ) {
+    status = false;
+  } else if ( lastTotal === maxTotal || lastTotal === minTotal ) {
     status = false;
   }
 

@@ -29,4 +29,8 @@ describe( '#checkSequence', function() {
   it( 'should return false if the password are capital letters and are in descending order', function() {
     expect( checkSequence( 'EDCBA', 6 )).to.be.false;
   });
+
+  it( 'should return false if the password is non sequential and do not have enough chars', function() {
+    expect( checkSequence( 'a23de6', 3 )).to.be.false;
+  });
 });
