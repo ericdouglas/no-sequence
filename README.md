@@ -20,7 +20,7 @@ var noSequence = require( 'no-sequence' ).checkSequence;
 
 // return false if "password" is sequential
 // ps : verification made by charCode 
-// ps2: works with letters and capital letters to
+// ps2: works with letters and capital letters too
 
 var password = '123456';
 var minSize = 6;
