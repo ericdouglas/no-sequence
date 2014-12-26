@@ -25,12 +25,15 @@ function checkSequence( pass, size ) {
   var status = true;
 
   var sizeOk    = checkSize( pass, size );
+  var maxAndMin = checkMaxAndMin( pass );
   var maxTotal  = generateMaxValue( pass );
   var minTotal  = generateMinValue( pass );
   var lastTotal = generateLastCharTotal( pass );
 
   if ( !sizeOk ) {
     status = false;
+  } else if ( maxAndMin ) {
+    status = true;
   } else if ( lastTotal === maxTotal || lastTotal === minTotal ) {
     status = false;
   }
