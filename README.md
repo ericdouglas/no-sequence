@@ -5,6 +5,8 @@ Module to verify sequential passwords.
 [![](https://travis-ci.org/thothJS/no-sequence.svg)](https://travis-ci.org/thothJS/no-sequence)
 [[![Coverage Status](https://coveralls.io/repos/thothJS/no-sequence/badge.png)](https://coveralls.io/r/thothJS/no-sequence)](https://coveralls.io/r/thothJS/no-sequence)
 
+[![NPM](https://nodei.co/npm/no-sequence.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/no-sequence/)
+
 ## Instalation
 
 ```sh
