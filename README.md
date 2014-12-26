@@ -16,7 +16,7 @@ npm install no-sequence --save
 ## Usage
 
 ```js
-var nosq = require( 'no-sequence' );
+var noSequence = require( 'no-sequence' ).checkSequence;
 
 // return false if "password" is sequential
 // ps : verification made by charCode 
@@ -25,9 +25,13 @@ var nosq = require( 'no-sequence' );
 var password = '123456';
 var minSize = 6;
 
-nosq.checkSequence( password, minSize );
+noSequence( password, minSize );
 // false
 ```
+
+## Example
+
+Look at the [example](https://github.com/thothJS/no-sequence/blob/master/example) folder to see this module in action.
 
 ## Tests
 
