@@ -33,4 +33,16 @@ describe( '#checkSequence', function() {
   it( 'should return false if the password is non sequential and do not have enough chars', function() {
     expect( checkSequence( 'a23de6', 8 )).to.be.false;
   });
+
+  it( 'should return true if the password is non sequential and have enough chars', function() {
+    expect( checkSequence( 'a23de6', 6 )).to.be.true;
+  });
+
+  it( 'should return true if the password is non sequential and have enough chars', function() {
+    expect( checkSequence( '123654', 6 )).to.be.true;
+  });
+
+  it( 'should return true if the password is non sequential and have enough chars', function() {
+    expect( checkSequence( 'ABCdef', 6 )).to.be.true;
+  });
 });
