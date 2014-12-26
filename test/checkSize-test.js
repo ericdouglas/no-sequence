@@ -1,7 +1,7 @@
 var checkSize = require( '../utils/checkSize' );
 var expect    = require( 'chai' ).expect;
 
-describe.only( '#checkSize', function() {
+describe( '#checkSize', function() {
   it( 'should return false if the password is less than minimum size', function() {
     expect( checkSize( '12345', 7 )).to.be.false;
   });
@@ -15,6 +15,6 @@ describe.only( '#checkSize', function() {
   });
 
   it( 'should return false if the password are chars and digits and is less than minimum size', function() {
-    expect( checkSize( 'a23def', 3 )).to.be.true;
+    expect( checkSize( 'a23de6', 8 )).to.be.false;
   });
 });
