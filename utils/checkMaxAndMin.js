@@ -13,8 +13,8 @@ function checkMaxAndMin( pass ) {
 
   var result = true;
   var length = pass.length;
-  var first = pass[ 0 ].charCodeAt();
-  var last = pass[ length - 1 ].charCodeAt();
+  var first  = pass.charCodeAt();
+  var last   = pass.charCodeAt( length - 1 );
   
   if ( Math.abs( last - first ) === length - 1 ) {
     result = false;
