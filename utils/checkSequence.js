@@ -1,4 +1,5 @@
 var checkSize             = require( './checkSize' );
+var checkMaxAndMin        = require( './checkMaxAndMin' );
 var generateMaxValue      = require( './generateMaxValue' );
 var generateMinValue      = require( './generateMinValue' );
 var generateLastCharTotal = require( './generateLastCharTotal' );

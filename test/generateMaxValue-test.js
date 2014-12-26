@@ -13,4 +13,5 @@ describe( '#generateMaxValue', function() {
   it( 'should return the total like if all capital letters are equal the last', function() {
     expect( maxTotal( 'BCDEFG' )).to.be.equal( 426 );
   });
+
 });

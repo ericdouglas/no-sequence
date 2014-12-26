@@ -6,6 +6,10 @@ describe( '#generateLastCharTotal', function() {
     expect( lastCharTotal( '123456' )).to.equal( 324 );
   });
 
+  it( 'should be equal to the last charcode multiplied by the length', function() {
+    expect( lastCharTotal( '123450' )).to.equal( 288 );
+  });
+
   it( 'should be equal to the last letter(charcode) multiplied by the length', function() {
     expect( lastCharTotal( 'abcdef' )).to.equal( 612 );
   });
