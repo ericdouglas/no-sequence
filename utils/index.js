@@ -1,6 +1,6 @@
 module.exports = {
 
-  checkSequence         : require( './checkSequence.js' ),
+  checkSequence         : require( './checkSequence' ),
   checkSize             : require( './checkSize' ),
   checkMaxAndMin        : require( './checkMaxAndMin' ),
   generateLastCharTotal : require( './generateLastCharTotal'),

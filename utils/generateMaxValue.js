@@ -9,6 +9,8 @@ function generateMaxValue( pass ) {
   *
   **/
 
+  'use strict';
+
   var total = 0;
 
   var splitPass = pass.split( '' );

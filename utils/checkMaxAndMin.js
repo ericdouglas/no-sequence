@@ -10,6 +10,7 @@ function checkMaxAndMin( pass ) {
   * return true if the chars can not be in sequence
   *
   **/
+  'use strict';
 
   var result = true;
   var length = pass.length;

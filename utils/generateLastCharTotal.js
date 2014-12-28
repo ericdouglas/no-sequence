@@ -9,6 +9,8 @@ function generateLastCharTotal( pass ) {
   *
   **/
 
+  'use strict';
+
   var value = 0;
   var length = pass.length;
   var lastChar = pass.charCodeAt( length - 1 );
